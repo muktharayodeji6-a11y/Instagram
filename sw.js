@@ -1,4 +1,4 @@
-const V='igdemo-v1';
+const V='igdemo-v3';
 const FILES=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','icon-maskable.png','feed1.webp','feed2.webp','profile.webp','navH.webp','navP.webp','popCard.webp','popMenu.webp','poster.jpg','vid.mp4'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(V).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()));
